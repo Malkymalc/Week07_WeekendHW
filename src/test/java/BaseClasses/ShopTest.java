@@ -41,7 +41,8 @@ public class ShopTest {
 
     @Test
     public void totalPotentialProfit() {
-        assertEquals(1000, bobsShop.totalPotentialProfit(), 0.1);
+        bobsShop.addItem(sheetMusic1);
+        assertEquals(1005, bobsShop.totalPotentialProfit(), 0.1);
     }
 
     @Test
